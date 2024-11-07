@@ -1,0 +1,92 @@
+studying the parameters... fo HD_phase_09_from kaggle
+
+
+1. age -> age
+2. sex -> sex   0: Female
+                1: Male
+
+3. cp -> chest pain  0: Typical angina
+                     1: Atypical angina
+                     2: Non-anginal pain
+                     3: Asymptomatic
+
+
+4. trestbps -> Resting blood pressure   Description: This is the patient's blood pressure measured in mmHg while at rest.
+                                        Significance: High resting blood pressure (hypertension) is a significant risk factor for heart disease.
+
+5. chol ->  Serum Cholesterol          Description: This parameter measures the serum cholesterol level in milligrams per deciliter (mg/dl).
+                                       Significance: Elevated cholesterol levels are associated with an increased risk of cardiovascular diseases
+
+6. fbs ->  Fasting Blood Sugar          Description: This is a binary variable indicating whether the patient's fasting blood sugar level is greater than 120 mg/dl.
+                                                      0: False (≤ 120 mg/dl)
+                                                      1: True (> 120 mg/dl)
+                                        Significance: High fasting blood sugar levels can indicate diabetes, 
+                                                      which is a significant risk factor for heart disease.
+
+7. restecg -> Resting Electrocardiographic Results 
+                                      Description: This parameter represents the results of an electrocardiogram (ECG) at rest, coded as:
+                                                   0: Normal
+                                                   1: Having ST-T wave abnormality (unspecified)
+                                                   2: Showing probable or definite left ventricular hypertrophy
+                                      Significance: Abnormal ECG results can indicate underlying heart conditions.
+
+8. thalach -> Maximum Heart Rate Achieved
+
+9. exang -> Exercise Induced Angina        Description: This is a binary variable indicating whether the patient experiences angina (chest pain) induced by exercise.
+                                                    0: No
+                                                    1: Yes
+                                            Significance: Exercise-induced angina can be a sign of coronary artery disease.
+
+10. oldpeak ->                     
+
+            Definition:
+                      Oldpeak is a measurement that reflects the amount of ST segment depression observed on an electrocardiogram (ECG) 
+                      during or after exercise compared to the resting state. It is typically measured in millimeters (mm).
+
+            What is the ST Segment?
+                       The ST segment is a vital part of the ECG waveform that provides important information 
+                       about the heart's electrical activity, particularly during the recovery phase of the cardiac cycle. 
+                       Abnormalities in the ST segment can indicate serious conditions such as ischemia or myocardial infarction, 
+                       making it a crucial parameter in cardiac diagnostics and monitoring.
+
+            Normal vs. Abnormal ST Segment
+                        Normal ST Segment:
+                                 In a healthy heart, the ST segment is typically flat and isoelectric 
+                                 (meaning it is at the baseline level of the ECG).
+                        Abnormal ST Segment:
+                                   ST Segment Elevation:
+                                              An elevation of the ST segment above the baseline can indicate 
+                                              acute myocardial infarction or other forms of cardiac stress.
+                                   ST Segment Depression: 
+                                               A depression of the ST segment below the baseline can suggest myocardial ischemia, 
+                                               particularly during exercise or stress testing.
+                                   Horizontal or Downsloping Depression:  
+                                               This is often associated with more significant ischemia and is a key 
+                                               finding during stress tests.   
+
+11. Slope -> The Slope of the Peak Exercise ST Segment
+
+               Description: This parameter describes the slope of the ST segment during peak exercise, typically coded as:
+                            0: Upsloping
+                            1: Flat
+                            2: Downsloping
+
+                            Upsloping: The ST segment rises above the baseline after exercise.
+                            Flat: The ST segment remains level with the baseline.
+                            Downsloping: The ST segment dips below the baseline.
+
+               Significance: The slope can provide information about the heart's response to stress and potential ischemia.
+
+12. ca -> Number of Major Vessels (0-3) Colored by Fluoroscopy
+
+                 Description: This parameter indicates the number of major coronary vessels (0 to 3) 
+                               that show abnormality when viewed using fluoroscopy.
+                 Significance: The number of affected vessels can indicate the severity of coronary artery disease.
+
+13. thal -> results of a thallium stress test
+
+                Description: This parameter indicates the results of a thallium stress test, coded as:
+                             0: Normal
+                             1: Fixed defect
+                             2: Reversible defect
+                Significance: These results help assess the presence and severity of coronary artery disease.
